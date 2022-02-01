@@ -11,6 +11,7 @@ body {
   color: #333;
   /* I'll give you this one for free lol */
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -20,8 +21,20 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 10px;
+  display: flex;
+  gap: 10px;
 }
-
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.inner-flex {
+  display: flex;
+  justify-content: space-between;
+}
 .icon {
   color: royalblue;
   font-size: 26px;
@@ -31,8 +44,22 @@ body {
   height: 42px;
   border-radius: 50%;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
+}
+.header {
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
 }
 
 .close-button {
